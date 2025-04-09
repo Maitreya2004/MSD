@@ -1,0 +1,65 @@
+<! DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="IEKart's is an online shopping website that sells goods in
+retail. This company deals with various categories like Electronics, Clothing, Accessories etc.">
+<title>IEKart's Shopping Application - Signup</title>
+</head>
+<body>
+<header>
+<nav>
+<ul>
+<li><a href="#">Electronics</a></li>
+<li><a href="#">Clothing</a></li>
+<li><a href="#">Accessories</a></li>
+<li><a href="Login.html">Login</a></li>
+<li><a href="SignUp.html">SignUp</a></li>
+<li><a href="Track.html">Track order</a></li>
+</ul>
+</nav>
+</header>
+<main>
+<h1>Signup</h1>
+<form>
+<label for="name">Name:</label>
+<input type="text" id="name" name="name" required><br><br>
+<label for="email">Email:</label>
+<input type="email" id="email" name="email" required><br><br>
+<label for="password">Password:</label>
+<input type="password" id="password" name="password" required><br><br>
+<label for="gender">Gender:</label>
+<select id="gender" name="gender" required>
+<option value="">Select Gender</option>
+<option value="male">Male</option>
+<option value="female">Female</option>
+<option value="other">Other</option>
+</select><br><br>
+<label for="dob">Date of Birth:</label>
+<input type="date" id="dob" name="dob" required><br><br>
+<label for="favorite-color">FavoriteColor:</label>
+<input type="color" id="favorite-color" name="favorite-color"><br><br>
+<label for="country">Country:</label>
+<input list="countries" name="country">
+<datalist id="countries">
+<option value="United States">
+<option value="Canada">
+<option value="Mexico">
+<option value="Brazil">
+<option value="China">
+<option value="India">
+<option value="Japan">
+<option value="Australia">
+<option value="New Zealand">
+<option value="South Africa">
+</datalist><br><br>
+<label for="subscribe-newsletter">Subscribe to Newsletter:</label>
+<input type="checkbox" id="subscribe-newsletter" name="subscribe-newsletter"><br><br>
+<input type="submit" value="Signup">
+</form>
+</main>
+<footer>
+<p>IEKart's Shopping Application &copy; 2023</p>
+</footer>
+</body>
+</html>
