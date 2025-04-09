@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Ice Cream Cone</title>
+<style>
+body {
+background-color: #f0f0f0;
+}
+.cone {
+width: 150px;
+height: 300px;
+margin: 50px auto;
+background-color: white;
+border-radius: 50% 50% 0 0;
+position: relative;
+}
+.scoop {
+width: 120px;
+height: 120px;
+background-color: #ffa500;
+border-radius: 50%;
+position: absolute;
+top: -60px;
+left: 15px;
+transition: all 0.5s;
+}
+.scoop.filled {
+height: 150px;
+top: -90px;
+}
+h1 {
+text-align: center;
+font-size: 36px;
+margin-top: 0;
+color: #333;
+}
+p {
+text-align: center;
+  font-size: 24px;
+color: #666;
+}
+.btn {
+display: block;
+width: 100px;
+height: 40px;
+margin: 20px auto;
+background-color: #4caf50;
+color: white;
+text-align: center;
+line-height: 40px;
+border-radius: 5px;
+cursor: pointer;
+}
+</style>
+</head>
+<body>
+<div class="cone">
+<div class="scoop"></div>
+</div>
+<h1>Ice Cream Cone</h1>
+<p>Click the button to fill the cone</p>
+<div class="btn" onclick="toggleScoop()">Fill Cone</div>
+<script src="app.js"></script>
+</body>
+</html>
